@@ -29,7 +29,8 @@
 
 <!-- render all channels when the body has loaded -->
 <!-- #10 #sorting: append all channels in new #sort order when the body has #load ed ; #10 #emojis added more #suitable-->
-<body onload="listChannels(compareNew); loadEmojis()">
+<!-- <body onload="listChannels(compareNew); loadEmojis()">-->
+    <body>
 
 <!-- channel area -->
 <!-- #9 #shdw #elv: channels view goes 16dp high, like a nav drawer -->
@@ -93,7 +94,6 @@
     </h1>
 
     <div id="messages">
-
         <!-- #10 #delete all #message s (or comment them out)-->
         <!--
         <div class="message own">
@@ -156,10 +156,14 @@
         <input type="text" placeholder="Message..." maxlength="140" id="message">
         <!-- #9 #btns #snd now accented -->
         <!-- #10 #new: id added to be able to address it -->
+        <p id="dispay_count"></p><p>/140</p>
         <button id="button-send" class="accent" onclick="sendMessage()"><i class="fas fa-arrow-right"></i></button>
-        <!-- #10: #new #styled button for creating a channel -->
+         <!-- #10: #new #styled button for creating a channel -->
         <button id="button-create" class="accent" onclick="createChannel();">CREATE</button>
+        
     </div>
+    
+    
 </div>
 
 </body>
